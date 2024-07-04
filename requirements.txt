@@ -1,0 +1,16 @@
+google-ai-generativelanguage==0.6.2
+google-generativeai==0.5.2
+inference-sdk==0.9.22
+langchain==0.1.16
+langchain-community==0.0.34
+langchain-openai==0.1.4
+langchain-text-splitters==0.0.1
+numpy==1.23.5
+openai==1.23.6
+pillow==10.3.0
+protobuf==5.26.1
+PyMuPDF==1.24.2
+PyPDF2==3.0.1
+streamlit==1.33.0
+
+
