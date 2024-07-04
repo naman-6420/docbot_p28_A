@@ -3,6 +3,7 @@ import os
 import numpy as np
 import time
 import fitz
+from dotenv import load_dotenv
 
 from PyPDF2 import PdfReader
 from PIL import Image
@@ -17,14 +18,21 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain_community.callbacks import get_openai_callback
 from langchain.text_splitter import CharacterTextSplitter
 
+load_dotenv()
+openai_api_key = os.environ.get("OPENAI_API_KEY")
+roboflow_api_key = os.environ.get("ROBOFLOW_API_KEY")
+gemini_pro_vision_api_key=os.environ.get("GEMINI_VISION_API_KEY")
+
+
+
 def generate_image(req_pg_no, path_to_uploaded_pdf, query):
         embeddings_model = OpenAIEmbeddings()
         CLIENT = InferenceHTTPClient(
             api_url="https://detect.roboflow.com",
-            api_key="nwRZcJDi8wcF27Nk99Hd"
+            api_key=roboflow_api_key
         )
         model = genai.GenerativeModel('gemini-pro-vision')
-        genai.configure(api_key="AIzaSyBtAvrqOqnGqRsGzO6FU81vLw0NuHPthDY")
+        genai.configure(api_key="")
         uploads_dir = "./uploads"
 
         if not os.path.exists(uploads_dir):
@@ -107,8 +115,6 @@ def generate_image(req_pg_no, path_to_uploaded_pdf, query):
 
         return most_relevant_img_path
 
-openai_api_key = "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"
-os.environ["OPENAI_API_KEY"] = "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"
 
 llm = OpenAI()
 embeddings_model = OpenAIEmbeddings()
