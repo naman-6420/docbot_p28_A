@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 3. **Run Streamlit:** Navigate to the folder containing the code and run the following command in terminal:
 ```bash 
-    streamlit run final_model.py
+streamlit run final_model.py
 ```
 
 4. **Upload PDF:** Once Streamlit server is running, a browser window will open. Upload your PDF file using the provided file uploader.
