@@ -37,6 +37,11 @@ Install the required packages using pip:
 ```bash
 pip install -r requirements.txt
 ```
+Open the .env file in an editor and add the following lines
+```bash
+OPENAI_API_KEY=your_openai_api_key
+GEMINI_VISION_API_KEY=your_gemini_vision_api_key
+```
 
 3. **Run Streamlit:** Navigate to the folder containing the code and run the following command in terminal:
 ```bash 
