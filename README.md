@@ -23,13 +23,7 @@ You need to have the following dependencies installed:
 
 ## Model
 
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/naman-6420/docbot_p28_A.git
-cd docbot_p28_A
-```
-2. **Create a Virtual Environment**
+1. **Create a Virtual Environment**
 
 It is recommended to create a virtual environment to manage dependencies:
 ```bash
@@ -37,23 +31,23 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-3. **Install Dependencies**
+2. **Install Dependencies**
 
 Install the required packages using pip:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Run Streamlit:** Navigate to the folder containing the code and run the following command in terminal:
+3. **Run Streamlit:** Navigate to the folder containing the code and run the following command in terminal:
 ```bash 
     streamlit run final_model.py
 ```
 
-5. **Upload PDF:** Once Streamlit server is running, a browser window will open. Upload your PDF file using the provided file uploader.
+4. **Upload PDF:** Once Streamlit server is running, a browser window will open. Upload your PDF file using the provided file uploader.
 
-6. **Add Your Prompt:** Enter your query or prompt related to the content of the uploaded PDF in the chat interface.
+5. **Add Your Prompt:** Enter your query or prompt related to the content of the uploaded PDF in the chat interface.
 
-7. **Wait for Results:** DocBot will process your prompt, extract relevant information, generate captions for images, and display the most relevant image along with the answer to your query.
+6. **Wait for Results:** DocBot will process your prompt, extract relevant information, generate captions for images, and display the most relevant image along with the answer to your query.
 
 **Note:** 
 - Image generation and captioning processes may take some time as we utilize APIs for YOLO(roboflow) and Gemini Pro Vision. 
@@ -72,3 +66,4 @@ DocBot utilizes the following APIs and models:
 
 # Demonstration
 [Find a video demonstration here](https://drive.google.com/file/d/1P5tAJg7zi80dA0APYNUqJWmx5TWypO-t/view?usp=drive_link)
+(first 3 minutes are explanation through PPT followed by actual demonstration)
