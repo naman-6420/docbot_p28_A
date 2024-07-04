@@ -25,10 +25,10 @@ You need to have the following dependencies installed:
 
 1. **Clone the Repository**
 
-   ```bash
-   git clone https://github.com/naman-6420/docbot_p28_A.git
-   cd docbot_p28_A
-   ```
+```bash
+git clone https://github.com/naman-6420/docbot_p28_A.git
+cd docbot_p28_A
+```
 2. **Create a Virtual Environment**
 
 It is recommended to create a virtual environment to manage dependencies:
