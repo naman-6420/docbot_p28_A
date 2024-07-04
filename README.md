@@ -1,5 +1,5 @@
 # DocBot
-DocBot is a smart documentation assistant built in Python. It helps you interact with your PDF documentation and answer questions related to the content of the PDF.
+DocBot is a smart documentation assistant built in Python using various AI models. It helps you interact with your PDF documentation and answer questions related to the content of the PDF.
 
 
 ## Features
