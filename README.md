@@ -9,19 +9,7 @@ DocBot is a smart documentation assistant built in Python using various AI model
 - Display the relevant image along with the answer to the user's query.
 
 
-## Requirements
-You need to have the following dependencies installed:
-- Python 3.x
-- PyPDF2
-- Pillow (PIL)
-- Streamlit
-- Google Generative AI
-- Fitz
-- OpenAI Inference SDK
-- Langchain Community
-
-
-## Model
+## Instructions to run app
 
 1. **Create a Virtual Environment**
 
